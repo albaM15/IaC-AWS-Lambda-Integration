@@ -1,0 +1,44 @@
+# Local .terraform directories
+**/.terraform/*
+
+# excluir archivos .tfstate
+*.tfstate
+*.tfstate.*
+
+#log files
+crash.log
+crash.*.log
+
+#para excluir las variables de terraform
+*.tfvars
+*.tfvars.json
+
+# Ignorar los archivos override
+
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+*tfplan*
+
+# ignorar la configuracion local de terraform
+.terraformrc
+terraform.rc
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Lambda zip 
+lambdas/*.zip
