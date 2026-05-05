@@ -1,10 +1,3 @@
-# entorno actual
-variable "environment" {
-  description = "Environment name"
-  type        = string
-  default     = "dev"
-}
-
 # para que no choque el nombre del bucket
 variable "suffix" {
   description = "Unique suffix"
