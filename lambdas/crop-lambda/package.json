@@ -1,11 +1,11 @@
 {
   "name": "crop-lambda",
   "version": "1.0.0",
-  "description": "Crop lambda function",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "description": "Crop lambda for processing images from S3 via SQS",
+  "main": "index.mjs",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.500.0",
+    "sharp": "^0.33.2"
+  }
 }
