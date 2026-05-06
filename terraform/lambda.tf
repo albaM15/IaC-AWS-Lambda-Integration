@@ -1,7 +1,7 @@
 # zipear el upload lambda
 data "archive_file" "upload_lambda_zip" {
   type        = "zip"
-  source_dir  = "${path.module}/../src/upload-lambda"
+  source_dir  = "${path.module}/../lambdas/upload-lambda"
   output_path = "${path.module}/upload-lambda.zip"
 }
 
@@ -38,7 +38,7 @@ resource "aws_lambda_function" "upload_lambda" {
 # zipear el crop lambda
 data "archive_file" "crop_lambda_zip" {
   type        = "zip"
-  source_dir  = "${path.module}/../src/crop-lambda"
+  source_dir  = "${path.module}/../lambdas/crop-lambda"
   output_path = "${path.module}/crop-lambda.zip"
 }
 
