@@ -1,6 +1,6 @@
 # grupo de seguridad del upload lambda
 resource "aws_security_group" "upload_lambda" {
-  name        = "sg-upload-lambda-${terraform.workspace}"
+  name        = "upload-lambda-sg-${terraform.workspace}"
   description = "Security group for the upload lambda"
   vpc_id      = aws_vpc.main.id
 
@@ -16,7 +16,7 @@ resource "aws_security_group" "upload_lambda" {
 
 # grupo de seguridad del crop lambda
 resource "aws_security_group" "crop_lambda" {
-  name        = "sg-crop-lambda-${terraform.workspace}"
+  name        = "crop-lambda-sg-${terraform.workspace}"
   description = "Security group for the crop lambda"
   vpc_id      = aws_vpc.main.id
 

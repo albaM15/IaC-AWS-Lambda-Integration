@@ -142,7 +142,7 @@ resource "aws_vpc_endpoint" "s3" {
 
 # security group del endpoint de sqs
 resource "aws_security_group" "vpce_sqs" {
-  name        = "sg-vpce-sqs-${terraform.workspace}"
+  name        = "vpce-sqs-${terraform.workspace}"
   description = "Security group for SQS VPC Endpoint"
   vpc_id      = aws_vpc.main.id
 
