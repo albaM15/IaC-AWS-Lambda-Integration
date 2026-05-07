@@ -1,6 +1,7 @@
 # el bucket para las imagenes
 resource "aws_s3_bucket" "images" {
   bucket = "image-processor-${terraform.workspace}-images-${var.suffix}"
+  force_destroy = true
   tags = { Name = "image-processor-${terraform.workspace}-images" }
 }
 
